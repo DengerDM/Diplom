@@ -110,7 +110,7 @@ html, body {
     background-position: center;
     display: block;
     position: relative;
-    z-index: 3;
+    
 }
 .btn_down:hover{
   background-color: #b5b5b6;
