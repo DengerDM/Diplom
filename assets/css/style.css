@@ -1,0 +1,118 @@
+@font-face {
+  font-family: DB;
+  src: url(../fonts/DroidSerif-Bold.ttf);
+}
+@font-face {
+  font-family: D;
+  src: url(../fonts/DroidSerif.ttf);
+}
+@font-face {
+  font-family: OR;
+  src: url(../fonts/Oswald-Regular.ttf);
+}
+@font-face {
+  font-family: HNB;
+  src: url(../fonts/HelveticaNeue-Bold.ttf);
+}
+/*  строчки обязательные для любого документа  */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.header{
+  width:100%;
+  top:0;
+  left:0;
+  background: #ead919;
+  z-index: 1;
+
+}
+.logo{
+  float: left;
+  margin: 20px auto;
+}
+.menu{
+  width: 40%;
+  float: right;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin:37px auto;
+}
+.menu a{
+  font-size: 18px;
+  font-family: OR;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #080808;
+}
+
+.container{
+  width:960px;
+  /*height: 130px;*/
+  margin: 0px auto;
+  border: 1px solid black;
+}
+.display_1 {
+  width: 100%;
+  background: #ead919;
+}
+.display_1 .container{
+  position: relative;
+}
+.display_1 span:nth-child(1){
+  margin: 195px 0px 0px 50px;
+  font-size: 72px;
+  font-family: HNB;
+  text-transform: capitalize;
+  color: #fb1445;
+  display: block;
+  z-index: 1;
+  position: relative;
+}
+.display_1 span:nth-child(2){
+  margin: 90px 0px 0px 50px;
+  font-size: 18px;
+  font-family: OR;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #080808;
+  display: block;
+  z-index: 2;
+  position: relative;
+}
+.display_1 img{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  box-shadow: 0px -5px 13px 0px rgba(0,0,0,0.3);
+}
+.display_1 p{
+  width: 72px;
+  margin: 55px 0px 0px 50px;
+  border: 1px solid #080808;
+  position: relative;
+  z-index: 6;
+}
+.btn_down {
+    width: 30px;
+    margin: 35px auto 40px;
+    padding: 15px 0px 15px 0px;
+    border:1px solid #7f7f7f;
+    border-radius: 25px;
+    background-image: url(../img/btn_down.png) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    position: relative;
+    z-index: 3;
+}
+.btn_down:hover{
+  background-color: #b5b5b6;
+  transition: 0.3s;
+}
